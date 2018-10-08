@@ -7,8 +7,112 @@
 		h2 {color: black; text-align: left;font-size:15px;}
 		p {font-family: DIN Offc; font-size:15px; color:red;}
 		td { text-align: center; font-size:20px;}	
+		
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: PINK;
+    padding: 14px 16px;
+    background-color: PURPLE;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: YELLOW;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+	font-size: 30px;   
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+} 
+</style>		
+		
 </style>
-<head><title>快樂人生</title></head>
+
+<head><title>快樂人生</title>
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+</head>
+
 <body bgcolor="lightyellow">
 <center><img src="https://cdn.pixabay.com/blog/post/2015/05/15/14-37-19-172_640.png" widht="200" height="100">
 <h1>西雅圖戶外 會員:
@@ -16,23 +120,131 @@
 <p>
 <br>我正在學習如何自己構建一個網頁。 這是一份草案。
 </h2>
-<br>
-<h3>
-<a href="https://www.google.com/search?q=death+valley&client=firefox-b-1&tbm=isch&tbo=u&source=univ&sa=X&ved=2ahUKEwjBjJXq_fXdAhUTFnwKHQHzA5UQsAR6BAgCEAE&biw=1920&bih=915" target="_blank">加州死亡谷國家公園圖片 </a>
-<br>
-<br>
-<a href=https://drptraveling.blogspot.com/2016/04/deathvalley.html target="_blank">加州死亡谷國家公園 blog</a>
-<br>
-<br>
-<a href="https://waparks.org/" targer="_blank"> 華盛頓國家公園</a>
-<br>
-<br>
-<a href="https://www.allrecipes.com/recipe/6865/to-die-for-blueberry-muffins/" target="_blank">如何製作藍莓鬆餅視頻</a>
 <p>
-<br>
-<br><a href="https://www.tulalipresortcasino.com/Resort/LeisureTravelAndToursLuxeline" targer="_blank">賭場巴士預訂</a>
-<br>
-<a href="http://hk.centanet.com/findproperty/zh-HK/Home/Index" targer="_blank">中原地產</a>
+
+    <!-- Tab links -->
+<div class="tab"><h3>
+  <button class="tablinks" onclick="openInfo(event, 'chinese')"><b>中文</br></button>
+  <button class="tablinks" onclick="openInfo(event, 'japanese')"><b>日本語</br></button>
+  <button class="tablinks" onclick="openInfo(event, 'korean')"><b>한국어</button>
+  <button class="tablinks" onclick="openInfo(event, 'vietnamese')"><b>Tiếng Việt</br></button>
+  <button class="tablinks" onclick="openInfo(event, 'english')"><b>English</button>  
+</div>
+
+<div id="chinese" class="tabcontent">
+	<h3>
+	<a href="https://www.google.com/search?q=death+valley&client=firefox-b-1&tbm=isch&tbo=u&source=univ&sa=X&ved=2ahUKEwjBjJXq_fXdAhUTFnwKHQHzA5UQsAR6BAgCEAE&biw=1920&bih=915" target="_blank">加州死亡谷國家公園圖片 </a>
+	<br>
+	<br>
+	<a href=https://drptraveling.blogspot.com/2016/04/deathvalley.html target="_blank">加州死亡谷國家公園 blog</a>
+	<br>
+	<br>
+	<a href="https://waparks.org/" targer="_blank"> 華盛頓國家公園</a>
+	<br>
+	<br>
+	<a href="https://www.allrecipes.com/recipe/6865/to-die-for-blueberry-muffins/" target="_blank">如何製作藍莓鬆餅視頻</a>
+	<p>
+	<br>
+	<br><a href="https://www.tulalipresortcasino.com/Resort/LeisureTravelAndToursLuxeline" targer="_blank">賭場巴士預訂</a>
+	<a href="http://hk.centanet.com/findproperty/zh-HK/Home/Index" targer="_blank">中原地產</a>
+</div>
+<div id="japanese" class="tabcontent">
+	<h3>
+	<a href="https://www.google.com/search?q=death+valley&client=firefox-b-1&tbm=isch&tbo=u&source=univ&sa=X&ved=2ahUKEwjBjJXq_fXdAhUTFnwKHQHzA5UQsAR6BAgCEAE&biw=1920&bih=915" target="_blank">デスバレー国立公園、カリフォルニア州写真
+	<br>
+	<br>
+	<a href=https://drptraveling.blogspot.com/2016/04/deathvalley.html target="_blank">デスバレー国立公園、カリフォルニアブログ</a>
+	<br>
+	<br>
+	<a href="https://waparks.org/" targer="_blank"> ワシントン国立公園</a>
+	<br>
+	<br>
+	<a href="https://www.allrecipes.com/recipe/6865/to-die-for-blueberry-muffins/" target="_blank">ブルーベリーのマフィンを作る方法</a>
+	<p>
+	<br>
+	<br><a href="https://www.tulalipresortcasino.com/Resort/LeisureTravelAndToursLuxeline" targer="_blank">カジノのバス予約</a>
+	<br>
+	<a href="http://www.zillow.com" targer="_blank">不動産</a>
+</div>
+<div id="korean" class="tabcontent">
+	<h3>
+	<a href="https://www.google.com/search?q=death+valley&client=firefox-b-1&tbm=isch&tbo=u&source=univ&sa=X&ved=2ahUKEwjBjJXq_fXdAhUTFnwKHQHzA5UQsAR6BAgCEAE&biw=1920&bih=915" target="_blank">데스 밸리 국립 공원, 캘리포니아 그림</a>
+	<br>
+	<br>
+	<a href=https://drptraveling.blogspot.com/2016/04/deathvalley.html target="_blank">데스 밸리 국립 공원, 캘리포니아 블로그</a>
+	<br>
+	<br>
+	<a href="https://waparks.org/" targer="_blank"> 워싱턴 국립 공원</a>
+	<br>
+	<br>
+	<a href="https://www.allrecipes.com/recipe/6865/to-die-for-blueberry-muffins/" target="_blank">블루 베리 머핀 만드는 법 동영상</a>
+	<p>
+	<br>
+	<br><a href="https://www.tulalipresortcasino.com/Resort/LeisureTravelAndToursLuxeline" targer="_blank">카지노 버스 예약</a>
+	<br>
+	<a href="http://www.zillow.com" targer="_blank">부동산</a>
+</div>
+<div id="vietnamese" class="tabcontent">
+	<h3>
+	<a href="https://www.google.com/search?q=death+valley&client=firefox-b-1&tbm=isch&tbo=u&source=univ&sa=X&ved=2ahUKEwjBjJXq_fXdAhUTFnwKHQHzA5UQsAR6BAgCEAE&biw=1920&bih=915" target="_blank">Ảnh về Death Valley National Park, CA</a>
+	<br>
+	<br>
+	<a href=https://drptraveling.blogspot.com/2016/04/deathvalley.html target="_blank">Vườn quốc gia Thung lũng Chết, blog California</a>
+	<br>
+	<br>
+	<a href="https://waparks.org/" targer="_blank"> Công viên quốc gia Washington</a>
+	<br>
+	<br>
+	<a href="https://www.allrecipes.com/recipe/6865/to-die-for-blueberry-muffins/" target="_blank">Làm thế nào để làm một video muffin blueberry</a>
+	<p>
+	<br>
+	<br><a href="https://www.tulalipresortcasino.com/Resort/LeisureTravelAndToursLuxeline" targer="_blank">Đặt vé xe buýt Casino</a>
+	<br>
+	<a href="http://www.zillow.com" targer="_blank">Bất động sản</a>
+</div>
+<div id="english" class="tabcontent">
+	<h3>
+	<a href="https://www.google.com/search?q=death+valley&client=firefox-b-1&tbm=isch&tbo=u&source=univ&sa=X&ved=2ahUKEwjBjJXq_fXdAhUTFnwKHQHzA5UQsAR6BAgCEAE&biw=1920&bih=915" target="_blank">Death Valley Pictures </a>
+	<br>
+	<br>
+	<a href=https://drptraveling.blogspot.com/2016/04/deathvalley.html target="_blank">Death Valley blog</a>
+	<br>
+	<br>
+	<a href="https://waparks.org/" targer="_blank"> Washington State Park</a>
+	<br>
+	<br>
+	<a href="https://www.allrecipes.com/recipe/6865/to-die-for-blueberry-muffins/" target="_blank">How to make blueberry muffins</a>
+	<p>
+	<br>
+	<br><a href="https://www.tulalipresortcasino.com/Resort/LeisureTravelAndToursLuxeline" targer="_blank">Tulalip Bus Reservation</a>
+	<br>
+	<a href="http://www.zillow.com" targer="_blank">Zillow</a>
+</div>
+
+
+<script>
+function openInfo(evt, tabName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+	// Hide all elements with class="tabcontent" by default */
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+     tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+     document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+} 
+</script>
 </body>
 
 </html>
