@@ -7,8 +7,12 @@
      color: green;
  }
 
+head {
+   background-color: purple;
+   text-align: center;
+   font-weight: bold;
+}
 	body { background-color: #ccffff;}
-		h1 {color: darkblue; font-size:25px;}
 		h2 {color: black; text-align: left;font-size:15px;}
 		p {font-family: DIN Offc; font-size:15px; color:red;}
 		td { text-align: center; font-size:20px;}	
