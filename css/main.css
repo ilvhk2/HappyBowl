@@ -7,6 +7,16 @@
      color: green;
  }
 
+aside#index_a{
+   background-color: lightyellow;
+   width: 230px;
+   height: auto;
+   position: absolute;
+   top: 5px;
+   right: 100px;
+   cursor: point;
+}
+
 head {
    background-color: purple;
    text-align: center;
