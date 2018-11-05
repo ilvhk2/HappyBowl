@@ -8,13 +8,17 @@
  }
 
 aside#index_a{
-   background-color: #f9f9f9;
-   width: 230px;
+   width: 500px;
    height: auto;
    position: absolute;
    top: 5px;
    right: 100px;
    cursor: point;
+}
+li{
+   display: inline;
+   border: solid 1px black;
+   padding: 5px;
 }
 
 head {
