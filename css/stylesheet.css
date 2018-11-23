@@ -16,7 +16,7 @@ aside#index_a{
    right: 100px;
    cursor: point;
 }
-li{
+aside ul li{
    display: inline;
    border: solid 1px black;
    padding: 5px;
@@ -115,6 +115,12 @@ li{
 .tabcontent {
     display: none;
     padding: 6px 12px;
-    border: 1px solid #ccc;
     border-top: none;
 } 
+.tabcontent li{
+   background-color: inherit;
+   list-style-type: square;
+   border: none;
+   padding: 5px;
+}
+	
